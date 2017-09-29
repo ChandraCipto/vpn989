@@ -15,7 +15,7 @@ local _M =
 	-- Getting updates
 	telegram =
 	{
-		token = assert(read_secret('telegram/token') or os.getenv('TG_TOKEN'),
+		token = assert(read_secret('telegram/token') or os.getenv('456667920:AAFPUG4s9coknNj_cWM1nVKof3S50uqZAVQ'),
 			'You must export $TG_TOKEN with your Telegram Bot API token'),
 		allowed_updates = os.getenv('TG_UPDATES') or {'message', 'edited_message', 'callback_query'},
 		polling =
@@ -61,7 +61,7 @@ local _M =
 		admin = assert(os.getenv('LOG_ADMIN'), 'You must export $LOG_ADMIN with your Telegram ID'),
 		stats = os.getenv('LOG_STATS')
 	},
-	superadmins = assert(json.decode(os.getenv('SUPERADMINS')),
+	superadmins = assert(json.decode(os.getenv('141960232')),
 		'You must export $SUPERADMINS with a JSON array containing at least your Telegram ID'),
 	cmd = '^[/!#]',
 	bot_settings = {
